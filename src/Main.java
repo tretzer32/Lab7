@@ -1,6 +1,15 @@
 import java.util.Scanner;
 
+/**
+ * This class represents a simple menu-driven program to display information about different animals.
+ */
 public class Main {
+
+    /**
+     * The main method that starts the program.
+     *
+     * @param args The command line arguments (not used in this program).
+     */
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
@@ -31,30 +40,48 @@ public class Main {
         scanner.close();
     }
 
+    /**
+     * Displays information about a dog.
+     */
     private static void showDog() {
         Dog dog = new Dog("Собака", "Мухтар", 5, "Вівчарка");
         dog.displayInfo();
         dog.showVoice();
     }
+
+    /**
+     * Displays information about a cat.
+     */
     private static void showCat() {
-        Dog dog = new Dog("Кішка", "Люся", 2, "Звичайна");
-        dog.displayInfo();
-        dog.showVoice();
-    }
-    private static void showSheep() {
-        Dog dog = new Dog("Вівця", "Барбара", 4, "Звичайна");
-        dog.displayInfo();
-        dog.showVoice();
-    }
-    private static void showHorse() {
-        Dog dog = new Dog("Кінь", "Біляк", 9, "Британський");
-        dog.displayInfo();
-        dog.showVoice();
+        Cat cat = new Cat("Кішка", "Люся", 2, "Звичайна");
+        cat.displayInfo();
+        cat.showVoice();
     }
 
+    /**
+     * Displays information about a sheep.
+     */
+    private static void showSheep() {
+        Sheep sheep = new Sheep("Вівця", "Барбара", 4, "Звичайна");
+        sheep.displayInfo();
+        sheep.showVoice();
+    }
+
+    /**
+     * Displays information about a horse.
+     */
+    private static void showHorse() {
+        Horse horse = new Horse("Кінь", "Біляк", 9, "Британський");
+        horse.displayInfo();
+        horse.showVoice();
+    }
+
+    /**
+     * Displays information about an ox.
+     */
     private static void showOx() {
-        Dog dog = new Dog("Віл", "Чорний", 12, "Український");
-        dog.displayInfo();
-        dog.showVoice();
+        Ox ox = new Ox("Віл", "Чорний", 12, "Український");
+        ox.displayInfo();
+        ox.showVoice();
     }
 }
